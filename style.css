@@ -51,25 +51,30 @@ ul {
 
 ul li {
   list-style: none;
+  width: 20%;
 }
 
 h3 {
   text-transform: uppercase;
   letter-spacing: .3em;
-  font-size: 15px;
+  font-size: 12px;
   color: #858383;
   margin-bottom: .5em;
 }
 
 input {
-  width: 140px;
+  width: 100%;
   border: 1px solid #CCC;
   border-radius: 10px;
-  color: #858383;
+  color: black;
   font-family: 'Poppins-ExtraBold';
   padding: .4em;
   font-size: 1.8em;
   cursor: pointer;
+}
+
+input::placeholder {
+  color: #858383;
 }
 
 input:active, input:focus {
@@ -95,7 +100,7 @@ button:hover {
 }
 
 img {
-  height: 40px;
+  height: 50%;
 }
 
 section {
@@ -115,4 +120,57 @@ h2 {
   font-size: 70px;
   font-weight: 700;
   font-family: 'Poppins-ExtraBoldItalic';
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding: 1.5em;
+  }
+
+  header {
+    padding-bottom: 3em;
+  }
+
+  ul {
+    gap: .5em;
+  }
+
+  ul li {
+    width: 32%;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  input {
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+
+  button {
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4em;
+    width: 4em;
+  }
+
+  span {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Poppins-ExtraBoldItalic';
+    color: blue;
+    gap: .2em;
+    margin-right: .1em;
+  }
+  
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins-ExtraBoldItalic';
+  }
 }
