@@ -30,7 +30,6 @@ body {
 }
 
 main {
-  /* height: 70vh; */
   width: 50vw;
   padding: 2.5em;
   background-color: white;
@@ -108,7 +107,7 @@ section {
 }
 
 span {
-  font-size: 70px;
+  font-size: 1em;
   font-weight: bolder;
   font-family: 'Poppins-ExtraBoldItalic';
   color: blue;
@@ -117,7 +116,7 @@ span {
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 5em;
   font-weight: 700;
   font-family: 'Poppins-ExtraBoldItalic';
 }
