@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(244, 233, 253);
+  background-color: hsl(0, 0%, 94%);
   min-height: 100vh;
   width: 100vw;
 }
@@ -32,7 +32,7 @@ body {
 main {
   width: 50vw;
   padding: 2.5em;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   border-bottom-right-radius: 150px;
 }
@@ -51,7 +51,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: .3em;
   font-size: 12px;
-  color: #858383;
+  color: hsl(0, 1%, 44%);
   margin-bottom: .5em;
 }
 
@@ -67,23 +67,23 @@ input {
 }
 
 input::placeholder {
-  color: #858383;
+  color: hsl(0, 1%, 44%);
 }
 
 input:active, input:focus {
-  border: 1px outset blue;
+  border: 1px outset hsl(259, 100%, 65%);
   outline: 0;
 }
 
 .error {
-  color: red;
+  color: hsl(0, 100%, 67%);
   font-size: 12px;
 }
 
 .stripe {
   position: relative;
   margin-top: 2.5em;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
 }
 
 button {
@@ -94,7 +94,7 @@ button {
   width: 7em;
   bottom: -40px;
   border: none;
-  background-color: blue;
+  background-color: hsl(259, 100%, 65%);
   border-radius: 50%;
   cursor: pointer;
   transition: .5s;
@@ -116,7 +116,7 @@ span {
   font-size: 1em;
   font-weight: bolder;
   font-family: 'Poppins-ExtraBoldItalic';
-  color: blue;
+  color: hsl(259, 100%, 65%);
   gap: .2em;
   margin-right: .1em;
 }
@@ -168,7 +168,7 @@ h2 {
     font-size: 40px;
     font-weight: bolder;
     font-family: 'Poppins-ExtraBoldItalic';
-    color: blue;
+    color: hsl(259, 100%, 65%);
     gap: .2em;
     margin-right: .1em;
   }
