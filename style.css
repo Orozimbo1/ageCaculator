@@ -37,12 +37,6 @@ main {
   border-bottom-right-radius: 150px;
 }
 
-header {
-  position: relative;
-  border-bottom: 1px solid #CCC;
-  padding-bottom: 2.5em;
-}
-
 ul {
   display: flex;
   gap: 2em;
@@ -81,8 +75,20 @@ input:active, input:focus {
   outline: 0;
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.stripe {
+  position: relative;
+  margin-top: 2.5em;
+  border-bottom: 1px solid #CCC;
+}
+
 button {
   position: absolute;
+  top: -3.5em;
   right: 0;
   height: 7em;
   width: 7em;
@@ -129,8 +135,8 @@ h2 {
     padding: 1.5em;
   }
 
-  header {
-    padding-bottom: 3em;
+  .stripe {
+    margin-top: 3em;
   }
 
   ul {
@@ -151,7 +157,7 @@ h2 {
   }
 
   button {
-    bottom: -50%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 4em;
