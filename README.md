@@ -1,7 +1,7 @@
 # Calculadora de idade
 
 * Responsividade com CSS FlexBox
-* Breackpoints:
+* Breakpoints:
    - 1440px -> Desktop
    - 375 -> Celular
 * HTML Semântico
