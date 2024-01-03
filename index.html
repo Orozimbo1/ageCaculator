@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+  <link rel="manifest" href="manifest.webmanifest">
   <meta charset="UTF-8">
+  <meta content='yes' name='apple-mobile-web-app-capable' />
+  <meta content='yes' name='mobile-web-app-capable' />
+  <meta name="apple-mobile-web-app-status-bar" content="hsl(259, 100%, 65%)">
+  <meta name="theme-color" content="black">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Age calculator app</title>
+  <title>Calculadora de idade</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,17 +20,17 @@
     <header>
       <ul>
         <li>
-          <h3>Day</h3>
+          <h3>Dia</h3>
           <input type="text" class="inputDay" placeholder="DD">
           <p class="error"></p>
         </li>
         <li>
-          <h3>Month</h3>
+          <h3>Mês</h3>
           <input type="text" class="inputMonth" placeholder="MM">
           <p class="error"></p>
         </li>
         <li>
-          <h3>Year</h3>
+          <h3>Ano</h3>
           <input type="text" class="inputYear" placeholder="YYYY">
           <p class="error"></p>
         </li>
@@ -36,16 +41,32 @@
     </button></div>
     <section>
       <h2>
-        <span class="years">- -</span>years
+        <span class="years">- -</span>anos
       </h2>
       <h2>
-        <span class="months">- -</span>months
+        <span class="months">- -</span>meses
       </h2>
       <h2>
-        <span class="days">- -</span>days
+        <span class="days">- -</span>dias
       </h2>
     </section>
   </main>  
   <script src="index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        if ('serviceWorker' in navigator) {
+            console.log('has serviceworker');
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('serviceWorker.js')
+                    .then((registration) => {
+                        console.log('Service worker registered.', registration);
+                    });
+            });
+        }
+        else {
+            console.log("Your browser not supports serviceWorkers");
+        }
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+    "name": "Calculadora de idade",
+    "short_name": "Calculadora",
+    "icons": [
+        {
+            "src": "assets/images/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/calculadora.png",
+            "sizes": "225x225",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "hsl(0, 0%, 100%)",
+    "theme_color": "hsl(259, 100%, 65%)"
+}
