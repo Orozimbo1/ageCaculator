@@ -1,4 +1,4 @@
-const submit = document.querySelector('button')
+ const submit = document.querySelector('button')
 const inputDay = document.querySelector('.inputDay')
 const inputMonth = document.querySelector('.inputMonth')
 const inputYear = document.querySelector('.inputYear')
@@ -65,20 +65,33 @@ submit.addEventListener('click', () => {
   }
   const daysText = () => {
     if(monthsText() == 0 && currentDate.getDate() < Number(inputDay.value)) {
+      // 1 condicao
+
       accMonth = 11
-      return (monthsYears[currentDate.getMonth() - 1] - Number(inputDay.value)) + currentDate.getDate()
+      console.log('1 condicao')
+      return Number(inputDay.value) - currentDate.getDate()
     } else if(monthsText() != 0 && currentDate.getDate() < Number(inputDay.value)) {
+      // 2 condicao
+
       accMonth = -1
-      return (monthsYears[currentDate.getMonth() - 1] - Number(inputDay.value)) + currentDate.getDate()
+      console.log('2 condicao')
+      return (monthsYears[currentDate.getMonth()] - Number(inputDay.value)) + currentDate.getDate()
     } else if(monthsText() == 0 && currentDate.getDate() == Number(inputDay.value)) {
+      // 3 condicao
+
       accYear = 1
+      console.log('3 condicao')
       return 0
     } else {
+      // else
+
       accYear = 1
+      console.log('4 condicao')
       return currentDate.getDate() - Number(inputDay.value)
     }
   }
 
+  // console.log(currentDate.getDate())
   days.innerHTML = daysText()
   months.innerHTML = monthsText() + accMonth
   years.innerHTML = yearsText() + accYear
