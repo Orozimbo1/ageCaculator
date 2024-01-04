@@ -82,7 +82,7 @@ input:active, input:focus {
 
 .stripe {
   position: relative;
-  margin-top: 2.5em;
+  margin-top: 3.5em;
   border-bottom: 1px solid hsl(0, 0%, 86%);
 }
 
@@ -128,46 +128,6 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  
-  .stripe {
-    margin-top: 3em;
-  }
-
-  ul {
-    gap: .5em;
-  }
-
-  ul li {
-    width: 32%;
-  }
-
-  input {
-    font-size: 1em;
-    border-radius: 5px;
-  }
-
-  button {
-    top: -2.5em;
-    height: 5em;
-    width: 5em;
-  }
-
-  span {
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: 'Poppins-ExtraBoldItalic';
-    color: hsl(259, 100%, 65%);
-    gap: .2em;
-    margin-right: .1em;
-  }
-  
-  h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    font-family: 'Poppins-ExtraBoldItalic';
-  }
-}
-@media screen and (max-width: 425px) {
   main {
     display: flex;
     flex-direction: column;
@@ -184,7 +144,7 @@ h2 {
   }
 
   ul li {
-    width: 32%;
+    width: 28%;
   }
 
   h3 {
